@@ -104,16 +104,13 @@ The private subnet is reserved for later expansion.
 ### 08. CloudTrail Group Rule Change
 ![CloudTrail Group Rule Change](screenshots/08-cloudtrail-group-rule-change.png)
 
-### 09. CloudTrail Security Group Rule Change
-![CloudTrail Security Group Rule Change](screenshots/09-cloudtrail-security-group-rule-change.png)
-
-### 10. CloudWatch Logs Insights — Rejected SSH Traffic
+### 9. CloudWatch Logs Insights — Rejected SSH Traffic
 ![CloudWatch Logs Insights](screenshots/10-cloudwatch-logs-insights.png)
 
-### 11. SSM Session Manager — SSH Status and Logs
+### 10. SSM Session Manager — SSH Status and Logs
 ![SSM SSH Status and Logs](screenshots/11-ssm-ssh-status-and-logs.png)
 
-### 12. Successful SSH Access
+### 11. Successful SSH Access
 ![Successful SSH Access](screenshots/12-ssh-success.png)
 
 ## Security Controls Implemented
