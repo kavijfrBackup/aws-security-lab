@@ -155,6 +155,7 @@ Administrative access is provided through AWS Systems Manager Session Manager us
 
 The public web server is allowed to reach the private server on TCP port 22 through a security-group reference.
 
+```text
 Internet
    |
    v
@@ -166,10 +167,27 @@ Public EC2
 Private EC2
 10.0.2.70
 No public IP
+```
 
 ### Connectivity Test
 
 ![Public to Private Connectivity](screenshots/13-public-to-private-ssh-reachable.png)
+
+---
+
+### Hardened Private Access
+
+After validating public-to-private connectivity, SSH access to the private EC2 instance was removed.
+
+The private server is now administered through AWS Systems Manager Session Manager using VPC interface endpoints, without exposing TCP port 22.
+
+#### SSM Session Manager Connected
+
+![Private SSM Connected](screenshots/15-private-ssm-connected.png)
+
+#### SSH Access Blocked
+
+![Private SSH Blocked](screenshots/16-private-ssh-blocked.png)
 
 ---
 
