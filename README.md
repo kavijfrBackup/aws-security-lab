@@ -78,6 +78,44 @@ The private subnet is reserved for later expansion.
 
 ---
 
+## Evidence
+
+### 01. VPC Overview
+![VPC Overview](screenshots/01-vpc-overview.png)
+
+### 02. Public Subnet
+![Public Subnet](screenshots/02-public-subnet.png)
+
+### 03. Private Subnet
+![Private Subnet](screenshots/03-private-subnet.png)
+
+### 04. Public Route Table
+![Public Route Table](screenshots/04-public-route-table.png)
+
+### 05. EC2 Instance
+![EC2 Instance](screenshots/05-ec2-instance.png)
+
+### 06. Security Group
+![Security Group](screenshots/06-security-group.png)
+
+### 07. IAM Role
+![IAM Role](screenshots/07-iam-role.png)
+
+### 08. CloudTrail Group Rule Change
+![CloudTrail Group Rule Change](screenshots/08-cloudtrail-group-rule-change.png)
+
+### 09. CloudTrail Security Group Rule Change
+![CloudTrail Security Group Rule Change](screenshots/09-cloudtrail-security-group-rule-change.png)
+
+### 10. CloudWatch Logs Insights — Rejected SSH Traffic
+![CloudWatch Logs Insights](screenshots/10-cloudwatch-logs-insights.png)
+
+### 11. SSM Session Manager — SSH Status and Logs
+![SSM SSH Status and Logs](screenshots/11-ssm-ssh-status-and-logs.png)
+
+### 12. Successful SSH Access
+![Successful SSH Access](screenshots/12-ssh-success.png)
+
 ## Security Controls Implemented
 
 ### Network Security
