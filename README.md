@@ -147,6 +147,32 @@ The private subnet is reserved for later expansion.
 
 ---
 
+## Private Subnet Segmentation
+
+The lab includes a private EC2 instance in `security-lab-private-subnet` with no public IPv4 address.
+
+Administrative access is provided through AWS Systems Manager Session Manager using VPC interface endpoints.
+
+The public web server is allowed to reach the private server on TCP port 22 through a security-group reference.
+
+Internet
+   |
+   v
+Public EC2
+10.0.1.21
+   |
+   | TCP 22 allowed
+   v
+Private EC2
+10.0.2.70
+No public IP
+
+### Connectivity Test
+
+![Public to Private Connectivity](screenshots/13-public-to-private-ssh-reachable.png)
+
+---
+
 ## Logging and Monitoring
 
 ### AWS CloudTrail
