@@ -230,6 +230,16 @@ This demonstrates active monitoring and detection of suspicious SSH activity.
 
 ---
 
+### SNS Email Notification
+
+The CloudWatch alarm is integrated with Amazon SNS so that rejected SSH activity generates an email notification.
+
+![SNS Email Alert](screenshots/20-sns-email-alert.png)
+
+This confirms the monitoring pipeline can detect suspicious SSH activity and notify the administrator automatically.
+
+---
+
 ## Logging and Monitoring
 
 ### AWS CloudTrail
