@@ -218,6 +218,17 @@ The private EC2 instance was still able to list and read objects from:
 This provides defense in depth by enforcing access restrictions at both the IAM role and VPC endpoint layers.
 
 ---
+## Rejected SSH Alerting
+
+A CloudWatch metric filter was created from VPC Flow Logs to count rejected SSH connection attempts.
+
+The custom metric `RejectedSSHConnections` is evaluated over a 5-minute window, and the alarm enters the `ALARM` state when 5 or more rejected SSH attempts are detected.
+
+![Rejected SSH Alarm Triggered](screenshots/19-rejected-ssh-alarm-triggered.png)
+
+This demonstrates active monitoring and detection of suspicious SSH activity.
+
+---
 
 ## Logging and Monitoring
 
