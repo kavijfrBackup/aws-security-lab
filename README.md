@@ -205,6 +205,20 @@ This validates that the role follows the principle of least privilege.
 
 ---
 
+## S3 VPC Endpoint Restriction
+
+The S3 Gateway Endpoint policy was restricted to the lab bucket instead of allowing unrestricted S3 access.
+
+The private EC2 instance was still able to list and read objects from:
+
+`security-lab-read-test-kavija`
+
+![S3 Endpoint Policy Validation](screenshots/18-s3-endpoint-policy-validation.png)
+
+This provides defense in depth by enforcing access restrictions at both the IAM role and VPC endpoint layers.
+
+---
+
 ## Logging and Monitoring
 
 ### AWS CloudTrail
