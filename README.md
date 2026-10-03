@@ -487,6 +487,27 @@ aws-security-lab/
 
 ---
 
+## Final Result
+
+This lab demonstrates a security-focused AWS environment with:
+
+- Public and private subnet segmentation
+- Restricted security group access
+- SSM-based private instance administration
+- VPC interface and gateway endpoints
+- Least-privilege IAM permissions
+- Restricted S3 access
+- CloudTrail auditing
+- VPC Flow Logs
+- CloudWatch Logs Insights
+- Rejected SSH detection
+- CloudWatch alarm automation
+- SNS email notifications
+
+The project was built and validated through hands-on troubleshooting, monitoring, and hardening.
+
+---
+
 ## Disclaimer
 
 This project is a personal security lab created for educational and portfolio purposes.
