@@ -191,6 +191,20 @@ The private server is now administered through AWS Systems Manager Session Manag
 
 ---
 
+## IAM Least-Privilege Validation
+
+The EC2 IAM role was refined by replacing the broad `AmazonS3ReadOnlyAccess` policy with a custom policy limited to the lab S3 bucket.
+
+The instance can list and read objects from the designated bucket:
+
+![S3 Least Privilege Validation](screenshots/17-s3-least-privilege-validation.png)
+
+An account-wide S3 bucket listing was intentionally denied because the role does not include `s3:ListAllMyBuckets`.
+
+This validates that the role follows the principle of least privilege.
+
+---
+
 ## Logging and Monitoring
 
 ### AWS CloudTrail
